@@ -1,4 +1,5 @@
 %% test_gabor.m - kiem thu nhanh Gabor
+% Nguoi phu trach: A6 (Gabor)
 % (A) kiem thu don vi bang assert   (B) anh van vong tron + oracle
 % (C) kiem tra do loi khi f thay doi (D) ve ngan hang 16 x 9 -> docs/figures
 % Quy uoc theta: phuong vuong goc van (docs/CONVENTIONS.md muc 2).
@@ -18,6 +19,18 @@ else
     figDir = fullfile(here, 'figures');
 end
 if ~exist(figDir, 'dir'), mkdir(figDir); end
+
+% Ep MATLAB nap dung file trong srcDir (tranh chay nham ban cu con nam trong path)
+if exist(srcDir, 'dir')
+    addpath(srcDir, '-begin');
+end
+clear functions; rehash;
+wk = which('gaborKernel');
+fprintf('gaborKernel dang dung: %s\n', wk);
+if exist(srcDir, 'dir')
+    assert(contains(wk, fullfile('src', 'filters')), ...
+        'MATLAB dang nap gaborKernel cu o noi khac - xoa ban cu khoi path (which gaborKernel -all)');
+end
 
 p    = defaultGaborParams();
 bank = gaborBank(p);
