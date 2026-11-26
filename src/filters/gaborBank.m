@@ -1,5 +1,6 @@
 function bank = gaborBank(p)
 % GABORBANK  Dung ngan hang nTheta x nFreq kernel Gabor.
+%   Nguoi phu trach: A6 (Gabor)
 %   bank = gaborBank(params)      params = cfg.filters.gabor (co the thieu truong)
 %   bank.kernels{iT,iF} : kernel
 %   bank.thetas : 1 x nTheta (rad, [0,pi))   bank.freqs : 1 x nFreq (chu ky/pixel)

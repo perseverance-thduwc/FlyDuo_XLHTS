@@ -1,5 +1,6 @@
 function I_enh = filterGabor(I_noisy, mask, theta, freq, params)
 % FILTERGABOR  Loc ngu canh Gabor (ngan hang nTheta x nFreq).
+%   Nguoi phu trach: A6 (Gabor)
 %   I_enh = filterGabor(I_noisy, mask, theta, freq, params)
 %
 %   I_noisy : anh double [0,1]            mask : logical, cung kich thuoc

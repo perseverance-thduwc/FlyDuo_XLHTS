@@ -1,5 +1,6 @@
 function g = gaborKernel(theta, f, p)
 % GABORKERNEL  Kernel Gabor 2D cho van tay.
+%   Nguoi phu trach: A6 (Gabor)
 %   g = gaborKernel(theta, f, p)
 %   theta : goc phuong vuong goc van (rad), theo docs/CONVENTIONS.md muc 2.
 %   f     : tan so (chu ky/pixel), so duong.

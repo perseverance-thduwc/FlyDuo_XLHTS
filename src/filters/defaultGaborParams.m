@@ -1,5 +1,6 @@
 function p = defaultGaborParams()
 % DEFAULTGABORPARAMS  Tham so mac dinh cho nhanh Gabor.
+%   Nguoi phu trach: A6 (Gabor)
 %   p = defaultGaborParams()
 %   Moi truong co the bi ghi de bang struct 'params' (cfg.filters.gabor)
 %   truyen vao filterGabor; truong thieu se lay gia tri o day.
